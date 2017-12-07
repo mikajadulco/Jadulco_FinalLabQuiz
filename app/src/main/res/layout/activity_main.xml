@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jadulco.jadulco_finallabquiz.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAMOUS QUOTES: "
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_title"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author: "
+        android:id="@+id/tv_author"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_author"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/et_author"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quote: "
+        android:id="@+id/tv_quote"
+        android:layout_below="@+id/et_author"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_quote"
+        android:layout_marginLeft="30dp"
+       android:id="@+id/et_quote"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:id="@+id/bt_save"
+        android:layout_below="@+id/et_quote"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:onClick="saveRecord"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:id="@+id/bt_next"
+        android:layout_below="@+id/et_quote"
+        android:layout_toRightOf="@+id/bt_save"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:onClick="showRecord"/>
+
+</RelativeLayout>
